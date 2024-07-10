@@ -1,9 +1,12 @@
-import React from 'react'
+import CustomNavbar from '@/components/pagecomponents/navbar';
+import React from 'react';
 
 const Customers = () => {
   return (
-    <div>Customers</div>
-  )
-}
+    <div className='w-full text-sm'>
+      <CustomNavbar title='Customers' />
+    </div>
+  );
+};
 
-export default Customers
+export default Customers;

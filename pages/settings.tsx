@@ -1,9 +1,12 @@
-import React from 'react'
+import CustomNavbar from '@/components/pagecomponents/navbar';
+import React from 'react';
 
 const Settings = () => {
   return (
-    <div>Settings</div>
-  )
-}
+    <div className='w-full text-sm'>
+      <CustomNavbar title='Settings' />
+    </div>
+  );
+};
 
-export default Settings
+export default Settings;

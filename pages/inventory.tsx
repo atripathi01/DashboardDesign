@@ -1,8 +1,11 @@
+import CustomNavbar from '@/components/pagecomponents/navbar'
 import React from 'react'
 
 const Inventory = () => {
   return (
-    <div>Inventory</div>
+    <div className='w-full text-sm'>
+         <CustomNavbar title='Inventory' />
+        </div>
   )
 }
 
