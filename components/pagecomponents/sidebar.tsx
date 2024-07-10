@@ -10,13 +10,16 @@ import RedeemRoundedIcon from '@mui/icons-material/RedeemRounded';
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
+  const [isMobileView, setIsMobileView]=useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
         setOpen(false);
+        setIsMobileView(true);
       } else {
         setOpen(true);
+        setIsMobileView(false);
       }
     };
 
@@ -56,7 +59,7 @@ const Sidebar = () => {
           {/* @ts-ignore */}
           <MenuOpenIcon
             size={34}
-            className={` duration-500 cursor-pointer ${!open && ' rotate-180'}`}
+            className={` duration-500 cursor-pointer ${!open && ' rotate-180'} ${isMobileView && 'hidden'}`}
             onClick={() => setOpen(!open)}
           />
         </div>

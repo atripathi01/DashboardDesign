@@ -8,8 +8,6 @@ import Icon1 from '../images/icon1.svg';
 import Icon2 from '../images/icon2.svg';
 import Icon3 from '../images/icon3.svg';
 import Icon4 from '../images/icon4.svg';
-import BlackModel from '../images/blackIphone.svg';
-import GoldModel from '../images/goldIphone.svg';
 import { ChevronRight } from '@mui/icons-material';
 import CustomBadges from '@/components/ui/badges';
 import { Recentorder } from '@/components/data/recentOrder';
@@ -36,7 +34,7 @@ const Dashboard = () => {
       backgroundColors:['#5570F1'],
   }
   return (
-    <div className='w-full text-sm'>
+    <div className='w-full text-sm h-screen overflow-x-hidden overflow-y-scroll'>
       <CustomNavbar title='Dashboard' />
       <div className='p-2'>
         <Grid container spacing={1}>
