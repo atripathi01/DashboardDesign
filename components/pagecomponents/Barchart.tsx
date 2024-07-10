@@ -12,7 +12,7 @@ import { Bar } from 'react-chartjs-2';
 Chartjs.register(Tooltip, Legend, CategoryScale, LinearScale, BarElement);
 
 const BarChart = ({ BarChartData }: any) => {
-  console.log(BarChartData);
+//   console.log(BarChartData);
   const data = {
     labels: BarChartData?.labels,
     datasets: [
